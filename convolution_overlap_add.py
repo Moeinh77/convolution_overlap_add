@@ -23,13 +23,13 @@ def conv_overlap_add(signal_1, signal_2, mode='numpy_convolve'):
             numpy.convolve
 
             scipy_auto: computes the linear convolution using
-            scipy.signal.convolve using mode='auto'
+            scipy.signal.convolve using method='auto'
 
             scipy_direct: computes the linear convolution using
-            scipy.signal.convolve using mode='direct'
+            scipy.signal.convolve using method='direct'
 
             scipy_fft: computes the linear convolution using
-            scipy.signal.convolve using mode='fft'
+            scipy.signal.convolve using method='fft'
 
 
     Returns:
