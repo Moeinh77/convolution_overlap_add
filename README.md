@@ -4,4 +4,4 @@ Implements convolution using overlap-add (OA) method for efficient way to evalua
 
 [This link explains the overlap-add method.](https://en.wikipedia.org/wiki/Overlap%E2%80%93add_method)
 
-This code is inefficient when compared to pure numpy.convolve ([see this example](blob/master/example_timing.py)). However, I belive someday we can defeat them.
+This code is inefficient when compared to pure numpy.convolve ([see this example](example_timing.py)). However, I belive someday we can defeat them.
