@@ -9,8 +9,28 @@ def conv_overlap_add(signal_1, signal_2, mode='numpy_convolve'):
     """Executes the convolution between signal_1 and signal_2 by dividing the
     larger signal into blocks with the same length as the smaller one.
 
+    For now: length(bigger signal) mod length(smaller signal) must be == 0
+    (the bigger signal length must be exactly divisible by the length of the
+    smaller signal)
+
     Args:
         signal_1 (array) and signal_2 (array): arrays used on the linear convolution.
+        mode (string):
+            toeplitz: computes the linear convolution using a toeplitz
+            matrix
+
+            numpy_convolve: computes the linear convolution using
+            numpy.convolve
+
+            scipy_auto: computes the linear convolution using
+            scipy.signal.convolve using mode='auto'
+
+            scipy_direct: computes the linear convolution using
+            scipy.signal.convolve using mode='direct'
+
+            scipy_fft: computes the linear convolution using
+            scipy.signal.convolve using mode='fft'
+
 
     Returns:
         array: convolution (signal_1 * signal_2), where * indicates the linear
