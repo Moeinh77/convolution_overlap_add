@@ -1,5 +1,12 @@
 # Convolution using Overlap-Add
 
+Install `convolution-overlap-add` on your system using : 
+
+```
+pip install convolution-overlap-add
+```
+
+
 Implements convolution using overlap-add (OA) method for efficient way to evaluate the discrete convolution of a very long signal. Just for fun. Probably numpy already does that.
 
 [This link explains the overlap-add method.](https://en.wikipedia.org/wiki/Overlap%E2%80%93add_method)
